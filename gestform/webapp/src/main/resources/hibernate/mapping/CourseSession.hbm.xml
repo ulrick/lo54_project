@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+    
+<hibernate-mapping>
+	<class table="course_session" lazy="false" name="utbm.lo54.webapp.model.CourseSession">
+		<id name="id" type="integer" column="ID">
+			<generator class="increment"/>
+		</id>
+		
+		<property name="start"> 
+			<column name="START" />
+		</property>
+		
+		<property name="end"> 
+			<column name="END" />
+		</property>
+		
+		<many-to-one name="courseCode" class="utbm.lo54.webapp.model.Course" column="COURSE_CODE" ></many-to-one>
+		<many-to-one name="locationId" class="utbm.lo54.webapp.model.Location" column="LOCATION_ID"></many-to-one>
+		
+	
+	</class>
+</hibernate-mapping>

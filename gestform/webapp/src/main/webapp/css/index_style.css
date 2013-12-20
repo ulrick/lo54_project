@@ -1,0 +1,40 @@
+@CHARSET "UTF-8";
+
+#main_content {
+	width : 90%;
+	position : relative;
+	margin : auto;
+	border : solid, red, 1px;
+}
+
+article.recherche{
+	/*position : absolute;*/
+	width : 90%;
+	background : rgba(3,216,202,0.5);
+	margin : auto;
+	border : solid, red, 1px;
+}
+
+article.resultat{
+	position : relative;
+	top : 70px;
+	width : 100%;
+	margin : auto;
+	border : solid, black, 1px;
+}
+
+article aside.course_list{
+	position : absolute;
+	width : 30%;
+	float : left;
+	left : 5px;
+	border : solid, black, 1px;
+}
+
+article aside.list_sessioncourse{
+	position : absolute;
+	width : 65%;
+	float : right;
+	right : 5px;
+	border : solid, black, 1px;
+}
