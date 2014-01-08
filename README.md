@@ -1,23 +1,29 @@
 lo54_project
 ============
 
-Procédure de déployement 
+Il s'agit de gérer l'offre de formation d'une école privée.
+L'école édite un catalogue en ligne (HTML) listant toutes les formations disponibles et
+pour chaque formation, les dates des prochaines sessions prévues.
+L'utilisateur doit être capable de :
 
-environnement TomEE (Tomcat + javaEE) web profile 
+- filtrer la liste des formations par un mot clé contenu dans le titre de la formation.
+- filtrer la liste des formations par les sessions disponibles à une date donnée.
+- filtrer la liste des formations en fonction du lieu de la session, ce lieu provenant d'une liste déroulante.
+
+L'utilisateur doit pouvoir sélectionner une session et s'y pré-inscrire en indiquant ses
+coordonnées personnelles (Nom, Prénom, Adresse, Téléphone, Email).
+Pour ne pas compliquer le modèle, on considérera qu'une même personne s'inscrivant à
+2 sessions est alors présente 2 fois dans la base.
+
+Il n'est pas demandé de créer une interface d'administration pour gérer les données de la
+base.
 
 
-1- Dézipper le fichier "projet_lo54" sur votre bureau 
-
-2- copier dans votre Racine C:/ le dossier "tomee" (environnement d'exécution)
-
-3- importer le fichier gestform_db.sql dans une base de donnée MySQL démarrée
-
-4- Dans éclipse, faite "importer un projet MAVEN" en spécifiant le dossier "webapp" du fichier dézziper   
-
-5- lancer l'application en utilisant l'environnement "tomee" mis sur le C:/
-	- faite clic droit sur le projet/run as->run on server. choisissez apache puis
-	- spécifier le sous dossier "C:/tomee/apache-tomee-webprofile-1.5.2" 
-
-6- Dans votre navigateur préféré, saisissez http://localhost:8080/webapp/accueil.jsp
+C'est un projet MAVEN réalisé avec l'API Eclipse. 
+technologie : 
+	JAVA EE 6 /JSR-330 utilisant le framework Google Guice pour l'injection des dépendances 
+	TomEE (Tomcat + JavaEE) comme environnement d’exécution. 
+	HIBERNATE pour la persistance des données
+	MySQL comme base de données.
 
 
