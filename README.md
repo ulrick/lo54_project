@@ -21,9 +21,9 @@ base.
 
 C'est un projet MAVEN réalisé avec l'API Eclipse. 
 technologie : 
-	JAVA EE 6 /JSR-330 utilisant le framework Google Guice pour l'injection des dépendances 
-	TomEE (Tomcat + JavaEE) comme environnement d’exécution. 
-	HIBERNATE pour la persistance des données
-	MySQL comme base de données.
+	- JAVA EE 6 /JSR-330 utilisant le framework Google Guice pour l'injection des dépendances 
+	- TomEE (Tomcat + JavaEE) comme environnement d’exécution. 
+	- HIBERNATE pour la persistance des données
+	- MySQL comme base de données.
 
 
